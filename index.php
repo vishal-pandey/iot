@@ -11,5 +11,7 @@
 	$sql = "select * from devices where id = 1";
 	$result = $mysql->query($sql);
 	$row = $result->fetch_assoc();
-	var_dump($row);
+	// var_dump($row);
+	echo $row['state'];
+
 ?>
