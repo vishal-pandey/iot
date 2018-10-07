@@ -10,6 +10,6 @@
 
 	$sql = "select * from devices where id = 1";
 	$result = $mysql->query($sql);
-	$row = $result->mysql_fetch_assoc($result);
-	// echo $row['state'];
+	$row = $result->fetch_assoc($result);
+	echo $row['state'];
 ?>
