@@ -4,6 +4,6 @@
 	$password = "12345";
 	$db = "iot";
 
-	$mysql = new mysql_connect($server, $user, $password, $db);
+	$mysql = new mysqli_connect($server, $user, $password, $db);
 	var_dump($mysql);
 ?>
